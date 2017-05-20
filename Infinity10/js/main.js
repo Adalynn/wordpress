@@ -190,16 +190,16 @@
 	var ssSmoothScroll = function() {
 
 		$('.smoothscroll').on('click', function (e) {
+
 			var target = this.hash,
 			$target    = $(target);
 	 	
 		 	e.preventDefault();
 		 	e.stopPropagation();	   	
-
 	    	$('html, body').stop().animate({
 	       	'scrollTop': $target.offset().top
 	      }, cfg.scrollDuration, 'swing').promise().done(function () {
-
+	      	
 	      	// check if menu is open
 	      	if ($('body').hasClass('menu-is-open')) {
 					$('#header-menu-trigger').trigger('click');
