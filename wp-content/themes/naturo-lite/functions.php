@@ -108,7 +108,7 @@ function naturo_lite_font_url(){
 
 function naturo_lite_scripts() {
 
-	wp_enqueue_script('naturo_lite-nivo-jquery', get_template_directory_uri().'/js/jquery-2.1.3.min.js' , array(), '', true);	
+//	wp_enqueue_script('naturo_lite-nivo-jquery', get_template_directory_uri().'/js/jquery-2.1.3.min.js' , array(), '', false);	
 
 //	wp_enqueue_style('naturo_lite-font', naturo_lite_font_url(), array());
 //	wp_enqueue_style( 'naturo_lite-basic-style', get_stylesheet_uri() );
